@@ -15,7 +15,7 @@
                 var contents = $resource("http://localhost:3000/api");
                 // List  :一番外側が[]を取得 --> query()
                 // Object:一番外側が{}を取得 --> get()
-                $scope.items = contents.query();
+                $scope.items = contents.get();
             };
 
         }]);
